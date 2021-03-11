@@ -1,0 +1,26 @@
+Opus No.3 in C-sharp minor - Approaching The Inevitable
+
+C#m
+
+[i]
+C#m A/C#m C#m A/C#m (x4)
+C#m       A
+F#7       C#m
+Cm        C#m
+A         D
+A         F   D#
+C#  C7
+
+[r]
+C#m       A/C#m
+B         C#m
+D         C#
+C#m A     F#  C#m
+
+[var]
+C#m       E   Em
+C#m       B
+C#m       E   Em
+C#m       B
+A         B
+C#m A     F#  C#m
