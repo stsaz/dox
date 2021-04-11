@@ -1,33 +1,35 @@
 Take Away The Sun
 (2009, Sep 2016)
 
+Em G D C D
+
 [i]
-F#m            A
+Em             G
 I'm trying to hide
-E                            D E
+D                            C D
 From the sun that blinds my mind.
 Shining is wide,
 There's no place that I can find.
 
-F#m
+Em
 Give me darkness
-A
+G
 Back in my nest
-E                        D E
+D                        C D
 Where I was so warm and safe.
 Is this my fate?
 Can't it just wait?
 I'm not ready, I'm not brave.
 
 [r]
-E             D
+D             C
 But I wanna stay!
-E              F#m      A
+D              Em       G
 Can't you all wait any longer?
 Coming next day
-                                  E
+                                  D
 I'll be a little bit stronger to run.
-                D     E       F#m
+                C     D       Em
 But now please take away the sun!
 
 [ii]
@@ -46,19 +48,19 @@ It's giving what I see and hear.
 [r]
 
 [var]
-D                E        F#m D E
+C                D        Em  C D
 It doesn't even leave any ashes.
 Everywhere there are fire flashes.
-E
+D
 Oh
 
-F#m     D
+Em      C
 The pain is so big
-E       F#m
+D       Em
 And I become so weak
-D          E               F#m
+C          D               Em
 And now into this world I dive, Woah,
-D                 E            F#m
+C                 D            Em
 To bear the huge weight of my life.
 
 [r]
