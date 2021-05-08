@@ -44,6 +44,17 @@ Structures can be immediately initialized:
 		0,
 	};
 
+It's better to use field names when initializing a structure object:
+
+	struct name {
+		int i;
+		char c;
+	};
+	struct name o = {
+		.i = 0,
+		.c = 0,
+	};
+
 
 ### Structure type alias with `typedef`
 
