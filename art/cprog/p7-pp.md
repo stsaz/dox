@@ -32,6 +32,12 @@ We may use `""` for an `#include` directive
 
 It works like with `<>` but also searches for the file in the same directory where our current file lives.
 
+When complex file include trees are used, it's quite possible that several files include the same `.h` file.
+Compiler should read and process the same file twice and it will show an error if it detects a name conflict.
+To prevent compiler from doing so, we place `#pragma` directive in each `.h` file as the first line:
+
+	#pragma once
+
 
 ## Definitions
 

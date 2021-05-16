@@ -12,6 +12,7 @@ Contents:
 	* for
 	* break
 	* continue
+	* goto
 
 ## Conditional statements
 
@@ -176,3 +177,38 @@ Using `continue` instruction we can jump to the condition checking code at any t
 		}
 		// this part of loop body is executed from 0 to 10 times
 	}
+
+### goto
+
+When a `switch` statement is used inside a loop we can't use `break` to exit the loop while we are inside `switch`.
+
+	for (;;) {
+		switch (...) {
+		case 0:
+			break; // exit `switch`, but not `for`
+		}
+	}
+
+We solve this by using `goto`:
+
+	for (;;) {
+		switch (...) {
+		case 0:
+			goto done; // exit loop immediately
+		}
+	}
+
+	done:
+	...
+
+We can use the same technique for nested loops.
+
+	for (;;) {
+		for (...) {
+			if (...)
+				goto done; // exit both loops immediately
+		}
+	}
+
+	done:
+	...

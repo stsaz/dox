@@ -1,9 +1,11 @@
 # C syntax with examples: Structures
 
+* Initialization
 * Structure type alias with `typedef`
 * Structure alignment
 * Structure bitfields
 * Structure pointers
+* Unions
 
 Structure is a complex type which contains another types.
 An instance of a structure is called *object*.
@@ -33,7 +35,27 @@ Structures can nest each other:
 	struct name o;
 	o.nested.i = 0;
 
-Structures can be immediately initialized:
+Structure objects can be defined immediately:
+
+	struct {
+		int i;
+		char c;
+	} o;
+
+
+### Initialization
+
+Objects fields are not initialized automatically, which means that they may have any random value.
+It's an error to read uninitialized object fields and thus it's always good to initialize to zero.
+Structure object fields can be immediately initialized to zero values:
+
+	struct name {
+		int i;
+		char c;
+	};
+	struct name o = {};
+
+or explicitly:
 
 	struct name {
 		int i;
@@ -147,3 +169,31 @@ When accessing structure fields through a pointer we use `(*pointer).` statement
 
 	p->i = 2;
 	// `o.i` is 2 now
+
+
+### Unions
+
+Unions are similar to structures - they can contain other types too.
+But all fields inside a union share the same memory space.
+In other words, compiler maps different types to a single memory region so we can access it in different ways convenient to us.
+For example, it may be convenient when working with network packets.
+
+	union name {
+		int i;
+		char lo;
+	} u;
+	u.i = -1;
+	// now u.lo == 0xff on AMD64
+
+The size of a union always equals to the size of its largest field.
+
+Structures and unions can be mixed together.
+
+	union name {
+		int i;
+		char c[4];
+		struct {
+			char a;
+			int b;
+		} o;
+	} u;
